@@ -21,7 +21,7 @@ body {
 .content {
     height: 95vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -120,9 +120,9 @@ body {
     padding: 136% 17% 0 26%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .content {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
