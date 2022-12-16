@@ -1,0 +1,11 @@
+{
+  "name": "encrypter",
+  "version": "1.0.0",
+  "description": "The App consists of encripting the text according to certain parameters ",
+  "main": "encript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Carrasco Romero",
+  "license": "ISC"
+}

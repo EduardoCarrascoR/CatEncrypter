@@ -1,0 +1,133 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #F3F5FC;
+}
+
+.Cat {
+    filter: hue-rotate(130deg) brightness(550%);
+    padding: 20px;
+    width: 125px;
+    height: 80px;
+    box-sizing: content-box
+}
+
+.notFound {
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 15px;
+}
+
+.content {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.principal {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text {
+    color: #053a1d !important;
+    width: 80%;
+    height: 50%;
+    align-self: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 32px !important;
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.encript {
+    width: 398px;
+    height: 77px;
+    color: #053a1d;
+    background: #c8e7c8;
+    border: 1px solid #053a1d;
+    border-radius: 24px;
+}
+
+.desencript {
+    width: 398px;
+    height: 77px;
+    color: #053a1d;
+    background: #D8DFE8;
+    border: 1px solid #053a1d;
+    border-radius: 24px;
+}
+
+.secundaria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+    height: 95%;
+}
+
+.secundaria_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vh;
+    height: 60vh;   
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px #053a1d;
+    border-radius: 32px;
+}
+
+.textChanged {
+    background: #FFFFFF;
+    color: #053a1d;
+    width: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    height: 80%;
+    font-size: 32px;
+    border: 0 ;
+}
+
+.copyText {
+    width: 398px;
+    height: 77px;
+    color: #053a1d;
+    background: #D8DFE8;
+    border: 1px solid #053a1d;
+    border-radius: 24px;
+}
+
+.text_spam {
+    color: #053a1d;
+    font-size: 25px;
+}
+
+.textP {
+    color: #053a1d;
+    position: absolute;
+    padding: 136% 17% 0 26%;
+}
+
+@media screen and (min-width: 1024px) {
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .secundaria {
+        width: auto;
+    }
+}
