@@ -1,6 +1,10 @@
 nav {
     background-color: #7ba799 !important;
     height: 10vh !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 body {
@@ -92,7 +96,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 95%;
+    height: 97%;
     justify-content: space-around;
     width: 25%;
 }
@@ -139,6 +143,10 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    nav {
+        align-items: center;
+    }
+
     .content {
         align-items: center;
         flex-direction: column;
@@ -153,6 +161,18 @@ body {
 
     .secundaria_content{
         margin: 5%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .notFound {
+        width: 50%;
+        height: 60%;
+    }
+    .animation {
+        width: 90%;
+        height: 60%;
     }
     
     .button {
@@ -174,5 +194,7 @@ body {
         height: 77px;
     }
 
-    
+    .secundaria_content{
+        text-align: center;
+    }
 }
