@@ -18,6 +18,11 @@ body {
     width: 100%;
 }
 
+.button {
+    width: 398px;
+    height: 77px;
+}
+
 .content {
     display: flex;
     flex-direction: row;
@@ -57,8 +62,6 @@ body {
     border: 1px solid #053a1d;
     border-radius: 24px;
     color: #053a1d;
-    height: 77px;
-    width: 398px;
 }
 
 .desencript {
@@ -66,8 +69,6 @@ body {
     border: 1px solid #053a1d;
     border-radius: 24px;
     color: #053a1d;
-    height: 77px;
-    width: 398px;
 }
 
 .secundaria {
@@ -106,8 +107,6 @@ body {
     border: 1px solid #053a1d;
     border-radius: 24px;
     color: #053a1d;
-    height: 77px;
-    width: 398px;
 }
 
 .text_spam {
@@ -130,5 +129,10 @@ body {
 
     .secundaria {
         width: auto;
+    }
+    
+    .button {
+        width: 398px;
+        height: 77px;
     }
 }

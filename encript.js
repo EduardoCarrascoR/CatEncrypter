@@ -1,17 +1,13 @@
 const textEncript = () => {
     let str = document.getElementById("text").value,
-    str2 = str.replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("a", "ai").
-    
-    replaceAll("o", "ober").replaceAll("u", "ufat")
-    createElement(str, str2)
+    strEncript = encript(str, "encript");
+    createElement(str, strEncript)
 }
 
 const textDesencript = () => {
     let str = document.getElementById("text").value,
-    str2 = str.replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ai", "a").
-    
-    replaceAll("ober", "o").replaceAll("ufat", "u")
-    createElement(str, str2)
+    strEncript = encript(str, "desencript");
+    createElement(str, strEncript)
 }
 
 const createElement = (str, str2) => {
@@ -31,7 +27,7 @@ const createElement = (str, str2) => {
                 button.getAttribute("onclick")
                 button.setAttribute("onclick", "copyText()")
                 button.setAttribute("id", "button")
-                button.className = "copyText"
+                button.className = "copyText button"
                 
                 aside.removeChild(spam)
           }
@@ -45,4 +41,21 @@ const copyText = () => {
     let contentText = document.querySelector(".textChanged")
     contentText.select()
     document.execCommand("copy")
+}
+
+const encript = (str, method) => {
+
+    let text
+
+    switch (method) {
+          case "encript":
+                text = str.replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("a", "ai").replaceAll("o", "ober").replaceAll("u", "ufat");
+                break;
+    
+          case "desencript":
+                text = str.replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ai", "a").replaceAll("ober", "o").replaceAll("ufat", "u");
+                break;
+    }
+
+    return text
 }
