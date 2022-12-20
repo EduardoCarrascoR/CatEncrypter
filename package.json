@@ -1,5 +1,5 @@
 {
-  "name": "encrypter",
+  "name": "Cat Encrypter",
   "version": "1.0.0",
   "description": "The App consists of encripting the text according to certain parameters ",
   "main": "encript.js",
